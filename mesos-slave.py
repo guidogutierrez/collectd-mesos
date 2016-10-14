@@ -120,7 +120,7 @@ def lookup_stat(stat, json, conf):
 
 def configure_callback(conf):
     """Received configuration information"""
-    host = MESOS_HOST
+    host = MESOS_SLAVE
     port = MESOS_PORT
     verboseLogging = VERBOSE_LOGGING
     version = MESOS_VERSION
