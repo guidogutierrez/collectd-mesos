@@ -10,6 +10,5 @@ RUN mv collectd-mesos/*.tpl /etc/collectd/collectd.conf.d/
 RUN mv collectd-mesos/collectd.conf /etc/collectd/collectd.conf
 
 
-COPY ./run.sh /run.sh
 
-ENTRYPOINT ["/run.sh"]
+ENTRYPOINT ["/collectd-mesos/run.sh"]
