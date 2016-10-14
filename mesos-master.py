@@ -21,7 +21,7 @@ import collections
 
 PREFIX = "mesos-master"
 MESOS_INSTANCE = ""
-MESOS_HOST = "localhost"
+MESOS_MASTER = "localhost"
 MESOS_PORT = 5050
 MESOS_VERSION = "1.0.0"
 MESOS_URL = ""
