@@ -21,7 +21,7 @@ LoadPlugin write_graphite
 
     Import "mesos-slave"
     <Module "mesos-slave">
-        Host "{{ MESOS_HOST }}"
+        Host "{{ MESOS_SLAVE | default(MESOS_MASTER) }}"
         Port "5051"
     </Module>
 </Plugin>
